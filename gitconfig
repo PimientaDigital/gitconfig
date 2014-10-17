@@ -1,0 +1,57 @@
+[alias]
+    st = status
+    ck = checkout
+    cm = commit
+[user]
+    name = "user"
+    email = email
+
+[core]
+    autocrlf = input
+    excludesfile = ~/.gitignore
+	editor = vim
+
+[color]
+    ui = true
+    status = auto
+    branch = auto
+    diff = auto
+    interactive = auto
+    branch = auto
+    diff = auto
+    status = auto
+
+[color "branch"]
+    current = yellow reverse
+    local = yellow 
+    remote = green
+
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+
+[alias]
+    st = status
+    ci = commit
+    ck = checkout
+    br = branch
+    lg = log --graph -10
+    ll = log --graph -30 --pretty=format:'%Cgreen%h %Creset%ad %Cblue%an %Creset%s'
+    cm = commit
+    rm-orig = find ./ -name \"*.orig\" | xargs rm
+
+[diff]
+    tool = meld
+
+[difftool]
+    prompt = false
+        
+[merge]
+	tool = meld
